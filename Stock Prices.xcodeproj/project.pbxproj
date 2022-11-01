@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		DCC427FF290D6E91003D7224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC427FE290D6E91003D7224 /* AppDelegate.swift */; };
 		DCC42801290D6E91003D7224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC42800290D6E91003D7224 /* SceneDelegate.swift */; };
-		DCC42803290D6E91003D7224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC42802290D6E91003D7224 /* ViewController.swift */; };
+		DCC42803290D6E91003D7224 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC42802290D6E91003D7224 /* WatchListViewController.swift */; };
 		DCC42808290D6E94003D7224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC42807290D6E94003D7224 /* Assets.xcassets */; };
 		DCC4280B290D6E94003D7224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC42809290D6E94003D7224 /* LaunchScreen.storyboard */; };
+		DCC4281829102702003D7224 /* TopStoriesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4281729102702003D7224 /* TopStoriesNewsViewController.swift */; };
+		DCC4281A29102711003D7224 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4281929102711003D7224 /* SearchResultsViewController.swift */; };
+		DCC4281C2910271D003D7224 /* StockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4281B2910271D003D7224 /* StockDetailsViewController.swift */; };
+		DCC4281E29117BC1003D7224 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4281D29117BC1003D7224 /* APICaller.swift */; };
+		DCC4282029117BD4003D7224 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4281F29117BD4003D7224 /* PersistanceManager.swift */; };
+		DCC4282229117BE1003D7224 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4282129117BE1003D7224 /* HapticsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCC427FB290D6E91003D7224 /* Stock Prices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Prices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC427FE290D6E91003D7224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCC42800290D6E91003D7224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCC42802290D6E91003D7224 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCC42802290D6E91003D7224 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		DCC42807290D6E94003D7224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCC4280A290D6E94003D7224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC4280C290D6E94003D7224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC4281729102702003D7224 /* TopStoriesNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesNewsViewController.swift; sourceTree = "<group>"; };
+		DCC4281929102711003D7224 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		DCC4281B2910271D003D7224 /* StockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewController.swift; sourceTree = "<group>"; };
+		DCC4281D29117BC1003D7224 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		DCC4281F29117BD4003D7224 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		DCC4282129117BE1003D7224 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +93,10 @@
 		DCC42814290ED492003D7224 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DCC42802290D6E91003D7224 /* ViewController.swift */,
+				DCC42802290D6E91003D7224 /* WatchListViewController.swift */,
+				DCC4281729102702003D7224 /* TopStoriesNewsViewController.swift */,
+				DCC4281929102711003D7224 /* SearchResultsViewController.swift */,
+				DCC4281B2910271D003D7224 /* StockDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -89,6 +104,9 @@
 		DCC42815290ED49E003D7224 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				DCC4281D29117BC1003D7224 /* APICaller.swift */,
+				DCC4281F29117BD4003D7224 /* PersistanceManager.swift */,
+				DCC4282129117BE1003D7224 /* HapticsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -174,9 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC42803290D6E91003D7224 /* ViewController.swift in Sources */,
+				DCC4282229117BE1003D7224 /* HapticsManager.swift in Sources */,
+				DCC4281C2910271D003D7224 /* StockDetailsViewController.swift in Sources */,
+				DCC42803290D6E91003D7224 /* WatchListViewController.swift in Sources */,
+				DCC4281829102702003D7224 /* TopStoriesNewsViewController.swift in Sources */,
+				DCC4281E29117BC1003D7224 /* APICaller.swift in Sources */,
 				DCC427FF290D6E91003D7224 /* AppDelegate.swift in Sources */,
 				DCC42801290D6E91003D7224 /* SceneDelegate.swift in Sources */,
+				DCC4281A29102711003D7224 /* SearchResultsViewController.swift in Sources */,
+				DCC4282029117BD4003D7224 /* PersistanceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WatchListViewController.swift
 //  Stock Prices
 //
 //  Created by TheGIZzz on 29/10/2565 BE.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WatchListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
