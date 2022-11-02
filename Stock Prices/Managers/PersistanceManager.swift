@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class PersistanceManager {
+    static let shared = "PersistanceManager"
+    
+    private init() {}
+}
