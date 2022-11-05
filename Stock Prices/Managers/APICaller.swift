@@ -16,6 +16,11 @@ class APICaller {
         case search
     }
     
+    private enum APIError: Error {
+       case noDataReturned
+       case invalidURL
+    }
+    
     private func url(for endpoint: Endpoints, queryParam: [String: String] = [:]) -> URL? {
         return nil
     }
