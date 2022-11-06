@@ -12,6 +12,12 @@ class APICaller {
     
     private init() {}
     
+    private struct Constants {
+        static let apiKey = ""
+        static let sandboxApikey = ""
+        static let baseUrl = ""
+    }
+    
     private enum Endpoints: String {
         case search
     }
