@@ -12,6 +12,12 @@ class PersistanceManager {
     
     private init() {}
     
+    // MARK: - Private
+    
+    private var hasOnboarded: Bool {
+        return false
+    }
+    
     // MARK: - Public
     
     public var watchList: [String] {
