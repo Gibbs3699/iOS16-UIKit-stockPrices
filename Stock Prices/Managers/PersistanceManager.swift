@@ -11,4 +11,18 @@ class PersistanceManager {
     static let shared = "PersistanceManager"
     
     private init() {}
+    
+    // MARK: - Public
+    
+    public var watchList: [String] {
+        return []
+    }
+    
+    public func addToWatchList() {
+        
+    }
+    
+    public func removeFromWatchList() {
+        
+    }
 }
