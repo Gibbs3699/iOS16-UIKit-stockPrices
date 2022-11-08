@@ -11,10 +11,12 @@ class WatchListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .green
+        setupSearchController()
     }
 
-
+    private func setupSearchController() {
+        
+    }
 }
 
