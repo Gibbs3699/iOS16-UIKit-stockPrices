@@ -9,7 +9,7 @@ import UIKit
 
 class SearchResultsTableViewCell: UITableViewCell {
 
-    static let identifier = "SearchResultsViewController"
+    static let identifier = "SearchResultsTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
