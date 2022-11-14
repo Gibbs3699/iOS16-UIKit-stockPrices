@@ -21,6 +21,8 @@ class SearchResultsViewController: UIViewController {
         return table
     }()
     
+    private var results: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -32,11 +34,17 @@ class SearchResultsViewController: UIViewController {
         tableView.frame = view.bounds
     }
 
+    public func update(with results: [String]) {
+        self.results = results
+        tableView.reloadData()
+    }
+    
     private func setupTable() {
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
     }
+    
 }
 
 extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSource {
