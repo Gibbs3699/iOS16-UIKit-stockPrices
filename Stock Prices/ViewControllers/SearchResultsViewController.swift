@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol SearchResultsViewDelegate: AnyObject {
+    func searchResultViewControllerDidSelect(searchResult: String)
+}
+
 class SearchResultsViewController: UIViewController {
+    
+    weak var delegate: SearchResultsViewDelegate?
     
     private let tableView: UITableView = {
         let table = UITableView()
@@ -47,6 +53,11 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
         cell.detailTextLabel?.text = "Apple Inc"
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.searchResultViewControllerDidSelect(searchResult: "AAPL")
     }
     
 }
