@@ -27,8 +27,20 @@ class APICaller {
        case invalidURL
     }
     
-    private func url(for endpoint: Endpoints, queryParam: [String: String] = [:]) -> URL? {
-        return nil
+    private func url(for endpoint: Endpoints, queryParams: [String: String] = [:]) -> URL? {
+        var urlString = Constants.baseUrl + endpoint.rawValue
+        
+        var queryItems = [URLQueryItem]()
+        
+        for (name, value) in queryParams {
+            queryItems.append(.init(name: name, value: value))
+        }
+        
+        queryItems.append(.init(name: "token", value: Constants.apiKey))
+        
+        urlString += "?" + queryItems.map{ "\($0.name)=\($0.value ?? "")"}.joined(separator: "&")
+        
+        return URL(string: urlString)
     }
     
     private func request<T: Codable>(url: URL?, expecting: T.Type, completion: @escaping (Result<T,Error>) -> Void) {
