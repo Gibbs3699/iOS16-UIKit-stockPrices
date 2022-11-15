@@ -13,9 +13,9 @@ class APICaller {
     private init() {}
     
     private struct Constants {
-        static let apiKey = ""
+        static let apiKey = "cbbsfe2ad3ibhoa2ac2g"
         static let sandboxApikey = ""
-        static let baseUrl = ""
+        static let baseUrl = "https://finhub.io/api/v1/"
     }
     
     private enum Endpoints: String {
