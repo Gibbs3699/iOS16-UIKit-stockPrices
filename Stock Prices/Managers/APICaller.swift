@@ -67,4 +67,9 @@ class APICaller {
         }
         task.resume()
     }
+    
+    public func search(query: String, completion: @escaping (Result<[String], Error>) -> Void) {
+        guard let url = url(for: .search, queryParams: ["q": query]) else { return }
+    }
+    
 }
